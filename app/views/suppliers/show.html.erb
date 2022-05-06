@@ -1,0 +1,9 @@
+<div>
+	Name : <%= @supplier.name %><br>
+	Address : <%= @supplier.address %><br><br>
+
+</div>
+<%= link_to "Edit Supplier", edit_supplier_path(@supplier) %> | 
+<%= link_to "Delete Supplier", supplier_path(@supplier), data: { method: :delete, confirm: "Are you sure?" } %> | 
+<%= link_to "Create Account", new_account_path(@account) %> | 
+<%= link_to "Show Account", accounts_path(@account) %>

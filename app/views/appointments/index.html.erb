@@ -1,0 +1,9 @@
+<h1>Appointment List</h1>
+
+<% @appointments.each do |appointment| %>
+	<li>
+		<%= link_to appointment.docname, appointment %>
+	</li>
+<% end %><br>
+
+<%= link_to "Create Appointment", new_appointment_path(@appointment) %>

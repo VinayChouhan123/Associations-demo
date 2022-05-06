@@ -1,0 +1,7 @@
+<div>
+	Body : <%= @account.body %><br>
+	Supplier ID : <%= @account.supplier_id %><br><br>
+
+</div>
+<%= link_to "Edit Account", edit_account_path(@account) %> | 
+<%= link_to "Delete Account", account_path(@account), data: { method: :delete, confirm: "Are you sure?" } %>

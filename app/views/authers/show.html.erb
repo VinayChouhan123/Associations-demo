@@ -1,0 +1,19 @@
+<table width="30%">
+	<thead>
+		<tr>
+			<th>name</th>
+			<th>email</th>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+				<td><%= @auther.name %></td>
+				<td><%= @auther.email %></td>
+				<td><%= link_to "add book", new_book_path(@auther) %></td>
+				<td><%= link_to "show book", books_path(@auther) %></td>
+			</tr>
+	</tbody>
+</table><br>
+
+<%= link_to "Edit Auther", edit_auther_path(@auther) %> | 
+<%= link_to "Destroy Auther", auther_path(@auther), data: { method: :delete, confirm: "Are you sure?" } %>

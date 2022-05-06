@@ -1,0 +1,16 @@
+<h1>New Patient</h1>
+
+<%= form_for @patient do |form| %> 
+	<div>
+		<%= form.label :name %><br>
+		<%= form.text_field :name %>
+	</div><br>
+
+	<div>
+		<%= form.label :age %><br>
+		<%= form.number_field :age %>
+	</div><br>
+
+	<%= form.submit %>
+
+<% end %>

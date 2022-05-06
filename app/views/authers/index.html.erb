@@ -1,0 +1,11 @@
+<h1>Authers List</h1>
+
+<% @authers.each do |auther| %>
+	<li>
+		<%= link_to auther.name, auther %>
+	</li>
+<% end %><br>
+
+<%= link_to "Create Auther", new_auther_path(@auther) %>
+
+

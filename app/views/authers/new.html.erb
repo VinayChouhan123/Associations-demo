@@ -1,0 +1,16 @@
+<h1>New Auther</h1>
+
+<%= form_for @auther do |form| %> 
+	<div>
+		<%= form.label :name %><br>
+		<%= form.text_field :name %>
+	</div><br>
+
+	<div>
+		<%= form.label :email %><br>
+		<%= form.text_field :email %>
+	</div><br>
+
+	<%= form.submit %>
+
+<% end %>

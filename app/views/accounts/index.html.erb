@@ -1,0 +1,9 @@
+<h1>Account List</h1>
+
+<% @accounts.each do |account| %>
+	<li>
+		<%= link_to account.body, account %>
+	</li>
+<% end %><br>
+
+<%= link_to "Create Account", new_account_path(@account) %>

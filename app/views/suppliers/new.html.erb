@@ -1,0 +1,16 @@
+<h1>New Supplier</h1>
+
+<%= form_for @supplier do |form| %> 
+	<div>
+		<%= form.label :name %><br>
+		<%= form.text_field :name %>
+	</div><br>
+
+	<div>
+		<%= form.label :address %><br>
+		<%= form.text_field :address %>
+	</div><br>
+
+	<%= form.submit %>
+
+<% end %>

@@ -1,0 +1,7 @@
+<div>
+	Doctor Name : <%= @appointment.docname %><br>
+	Address : <%= @appointment.address %><br><br>
+
+</div>
+<%= link_to "Edit Appointment", edit_appointment_path(@appointment) %> | 
+<%= link_to "Delete Appointment", appointment_path(@appointment), data: { method: :delete, confirm: "Are you sure?" } %>

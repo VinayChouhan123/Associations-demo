@@ -1,0 +1,21 @@
+<h1>New Account History</h1>
+
+<%= form_for @account_history, url: account_historys_url do |form| %> 
+	<div>
+		<%= form.label :accnumber %><br>
+		<%= form.number_field :accnumber %>
+	</div><br>
+
+	<div>
+		<%= form.label :name %><br>
+		<%= form.text_field :name %>
+	</div><br>
+
+	<div>
+		<%= form.label :account_id %><br>
+		<%= form.number_field :account_id %>
+	</div><br>
+
+	<%= form.submit %>
+
+<% end %>

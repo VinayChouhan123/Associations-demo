@@ -1,0 +1,7 @@
+<div>
+	Name : <%= @student.name %><br>
+	Description : <%= @student.description %><br><br>
+
+</div>
+<%= link_to "Edit Student", edit_student_path(@student) %> | 
+<%= link_to "Delete Student", student_path(@student), data: { method: :delete, confirm: "Are you sure?" } %>

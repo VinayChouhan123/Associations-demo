@@ -1,0 +1,7 @@
+<div>
+	Account Number : <%= @account_history.accnumber %><br>
+	Name : <%= @account_history.name %><br><br>
+
+</div>
+<%= link_to "Edit Account History", edit_account_history_path(@account_history) %> | 
+<%= link_to "Delete Account History", account_history_path(@account_history), data: { method: :delete, confirm: "Are you sure?" } %>

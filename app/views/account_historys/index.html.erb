@@ -1,0 +1,9 @@
+<h1>Account History</h1>
+
+<% @account_historys.each do |account_history| %>
+	<li>
+		<%= link_to account_history.name, account_history %>
+	</li>
+<% end %><br>
+
+<%= link_to "Create Account History", new_account_history_path(@account_history) %>

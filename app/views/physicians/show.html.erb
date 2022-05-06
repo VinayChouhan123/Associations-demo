@@ -1,0 +1,7 @@
+<div>
+	Name : <%= @physician.name %><br>
+	Email : <%= @physician.email %><br><br>
+
+</div>
+<%= link_to "Edit physician", edit_physician_path(@physician) %> | 
+<%= link_to "Delete physician", physician_path(@physician), data: { method: :delete, confirm: "Are you sure?" } %>

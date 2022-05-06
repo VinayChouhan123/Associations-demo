@@ -1,0 +1,9 @@
+<h1>Supplier List</h1>
+
+<% @suppliers.each do |supplier| %>
+	<li>
+		<%= link_to supplier.name, supplier %>
+	</li>
+<% end %><br>
+
+<%= link_to "Create Supplier", new_supplier_path(@supplier) %>
